@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Etch-a-Sketch</title>
+</header>
+<body>
+    <div class="main_container">
+        <div class="btns_container">
+            <button class="marker_btn">Marker</button>
+            <button class="eraser_btn">Eraser</button>
+            <button class="reset_btn">Reset</button>
+            <button class="RGB_btn">RGB</button>
+            <button class="opacity_btn">Opacity</button>
+        </div>
+        <div class="grid_container">
+        </div>
+        <div class="knob_container">
+            <img src="knob.png" height = "120px" width="120px" class="horizontal">
+            <div class="slider_container">
+                <input type="range" min="2" max="100" value="50" class="slider">
+            </div>
+            <img src="knob.png" height = "120px" width="120px" class="vertical">
+        </div>
+    </div>
+<script src="script.js" defer></script>
+</body>
+</html>

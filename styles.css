@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #FCFCFD;
+    color: rgb(0, 57, 122);
+    width: 80px;
+    height: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 57, 122);
+    border-radius: 10px;
+}
+button:hover{
+    color: #FCFCFD;
+    background-color: rgb(7, 81, 165);
+    border-color: rgb(7, 81, 165);
+}
+button:active{
+    color: #FCFCFD;
+    background-color: rgb(0, 57, 122);
+    border-color: rgb(0, 57, 122);
+}
+.activated{
+    color: #FCFCFD;
+    background-color: rgb(0, 57, 122);
+    background-color: rgb(0, 57, 122);
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.main_container{
+    display: flex;
+    flex-direction: column;
+    background-color: #b80101;
+    width: 920px;
+    height: 750px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+.grid_slider{
+    display: flex;
+    justify-content: center;
+}
+.knob_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.slider_container{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    margin-bottom: 20px;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 500px;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    background-color: white;
+    height: 16px;
+    border-radius: 10px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: lightgray;
+    margin-top: -7px;
+    border-radius: 30px;
+}
+.btns_container{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 20px;
+}
+.grid_container{
+    display:flex;
+    align-self: center;
+    margin: 20px;
+    width: 780px;
+    height: 580px;
+    background-color: silver;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.column{
+    display: flex;
+    flex-grow: 1;
+}
+.block{
+    border: 1px solid rgba(0,0,0,0.2);
+    flex-grow: 1;
+}
+
